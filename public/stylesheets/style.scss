@@ -1,0 +1,63 @@
+@import "fonts";
+@import "normalize";
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.select-region {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+
+  &__label {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &__input {
+    margin-left: 10px;
+  }
+}
+
+.region {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__country {
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 35px;
+    padding: 5px;
+    border: 2px solid #e5e5e5;
+    border-radius: 6px;
+  }
+
+  &__country-name {
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  &__country-flag {
+    max-width: 90%;
+    border: 0.5px solid black;
+    margin: auto 0;
+  }
+}
